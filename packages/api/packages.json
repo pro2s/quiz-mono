@@ -1,0 +1,11 @@
+{
+  "name": "@quiz/api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "php artisan serve"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}

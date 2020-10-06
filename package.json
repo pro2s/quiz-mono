@@ -1,0 +1,16 @@
+{
+  "name": "quiz",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "start": "lerna run start --parallel",
+    "build": "lerna run build --parallel",
+    "lerna": "lerna"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
