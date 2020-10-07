@@ -13,7 +13,9 @@
     "core-js": "^3.6.5",
     "test": "^0.6.0",
     "vue": "^3.0.0-0",
-    "vue-router": "^4.0.0-beta.13"
+    "vue-router": "^4.0.0-beta.13",
+    "@quiz/common": "^0.0.0",
+    "@quiz/components": "^0.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

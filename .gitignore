@@ -1,2 +1,4 @@
 /node_modules
 .vscoode
+lerna-debug.log
+*.code-workspace

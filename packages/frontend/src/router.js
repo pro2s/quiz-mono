@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import SignIn from './components//SignIn.vue'
 import HelloWorld from './components/HelloWorld.vue'
+import { SignIn } from '@quiz/components'
 
 const routes = [
   {
