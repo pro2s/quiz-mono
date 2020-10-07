@@ -1,16 +1,24 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <router-view></router-view>
+  <Nav/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { createStore } from './store/auth'
+import Nav from './components/Nav'
+
+const auth = createStore();
+auth.udpateUser();
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Nav
+  },
+  provide: {
+    'auth': auth,
+  },
 }
 </script>
 
@@ -22,5 +30,20 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+h3 {
+  margin: 40px 0 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
 }
 </style>
