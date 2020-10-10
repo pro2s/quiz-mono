@@ -1,0 +1,11 @@
+{
+    "name": "@quiz/domain",
+    "version": "0.0.0",
+    "private": true,
+    "description": "Domain entities",
+    "files": [
+        "./"
+    ],
+    "scripts": {
+    }
+}

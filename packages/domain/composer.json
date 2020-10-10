@@ -1,0 +1,19 @@
+{
+    "name": "quiz/domain",
+    "description": "Domain classes package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {"Quiz\\Domain\\": "src/"}
+    },
+    "require": {
+        "quiz/common": "*"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../common"
+        }
+    ]
+}

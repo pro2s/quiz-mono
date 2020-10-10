@@ -1,0 +1,11 @@
+{
+    "name": "quiz/common",
+    "description": "Common classes package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {"Quiz\\Common\\": "src/"}
+    },
+    "require": {}
+}
