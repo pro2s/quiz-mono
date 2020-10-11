@@ -1,0 +1,25 @@
+{
+    "name": "quiz/eloquent",
+    "description": "Eloquent package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {"Quiz\\Eloquent\\": "src/"}
+    },
+    "require": {
+        "quiz/common": "*",
+        "quiz/domain": "*",
+        "illuminate/database": "^8.0"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../common"
+        },
+        {
+            "type": "path",
+            "url": "../domain"
+        }
+    ]
+}
