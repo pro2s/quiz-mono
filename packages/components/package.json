@@ -15,7 +15,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pro2s/quiz-mono.git"

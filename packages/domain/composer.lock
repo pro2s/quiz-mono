@@ -1,0 +1,39 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "5bcbbfafb61d947aae012ebf0f1292a1",
+    "packages": [
+        {
+            "name": "quiz/common",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../common",
+                "reference": "628ed75be5bd9d729194cb04b98b826ec1b85eb6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Quiz\\Common\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Common classes package"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "quiz/common": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

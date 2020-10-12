@@ -1,7 +1,6 @@
 {
     "name": "@quiz/eloquent",
     "version": "0.0.0",
-    "private": true,
     "description": "Domain entities",
     "files": [
         "./"
