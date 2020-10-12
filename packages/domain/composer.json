@@ -8,7 +8,7 @@
         "psr-4": {"Quiz\\Domain\\": "src/"}
     },
     "require": {
-        "quiz/common": "*"
+        "quiz/common": "*@dev"
     },
     "repositories": [
         {

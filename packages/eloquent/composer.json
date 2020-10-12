@@ -8,8 +8,8 @@
         "psr-4": {"Quiz\\Eloquent\\": "src/"}
     },
     "require": {
-        "quiz/common": "*",
-        "quiz/domain": "*",
+        "quiz/common": "*@dev",
+        "quiz/domain": "*@dev",
         "illuminate/database": "^8.0"
     },
     "repositories": [

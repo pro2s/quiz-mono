@@ -1,5 +1,5 @@
 {
-    "name": "@quiz/domain",
+    "name": "@quiz/eloquent",
     "version": "0.0.0",
     "private": true,
     "description": "Domain entities",
@@ -7,6 +7,6 @@
         "./"
     ],
     "scripts": {
-        "bootstrap": "composer install"
+        "prepare": "composer install"
     }
 }
