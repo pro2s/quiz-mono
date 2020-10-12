@@ -1,19 +1,18 @@
 {
   "name": "@quiz/common",
   "version": "0.0.0",
-  "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
+  "private": true,
+  "description": "",
   "keywords": [],
-  "author": "Sergey Protasov <s.protasov@itransition.com>",
-  "license": "ISC",
+  "author": "",
+  "license": "",
   "main": "lib/common.js",
   "directories": {
     "lib": "lib",
-    "components": "lib/components",
     "test": "__tests__"
   },
   "files": [
-    "lib",
-    "lib/components"
+    "lib"
   ],
   "publishConfig": {
     "access": "public"

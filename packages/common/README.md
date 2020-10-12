@@ -1,11 +1,9 @@
 # `@quiz/common`
 
-> TODO: description
+Common js modules
 
 ## Usage
 
 ```
-const common = require('@quiz/common');
-
-// TODO: DEMONSTRATE API
+import { module } from '@quiz/common'
 ```
