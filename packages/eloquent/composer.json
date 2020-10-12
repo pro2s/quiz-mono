@@ -1,8 +1,8 @@
 {
     "name": "quiz/eloquent",
-    "version": "0.0.1",
-    "description": "Eloquent package",
     "type": "library",
+    "version": "0.0.2",
+    "description": "Eloquent package",
     "license": "MIT",
     "minimum-stability": "stable",
     "autoload": {
@@ -16,11 +16,14 @@
     "repositories": [
         {
             "type": "path",
-            "url": "../../packages/common"
-        },
-        {
-            "type": "path",
-            "url": "../../packages/domain"
+            "url": "../../packages/*"
         }
-    ]
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Quiz\\Eloquent\\LaravelServiceProvider"
+            ]
+        }
+    }
 }

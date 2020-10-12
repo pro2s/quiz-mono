@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "768fafe8430b9891f926b95de8cdf66a",
+    "content-hash": "c7bd56198e8665a6fa42196ce2982f10",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2070,11 +2070,11 @@
         },
         {
             "name": "quiz/eloquent",
-            "version": "0.0.1",
+            "version": "0.0.2",
             "dist": {
                 "type": "path",
                 "url": "../../packages/eloquent",
-                "reference": "fb50affbb66d0112149363893f7466eec36976dc"
+                "reference": "0664d12d0b34a4e5536eba068ff7714557b195bc"
             },
             "require": {
                 "illuminate/database": "^8.0",
@@ -2082,6 +2082,13 @@
                 "quiz/domain": "0.0.1"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Quiz\\Eloquent\\LaravelServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Quiz\\Eloquent\\": "src/"
@@ -2415,7 +2422,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2020-09-18T14:27:32+00:00"
+            "time": "2020-10-07T15:23:00+00:00"
         },
         {
             "name": "symfony/css-selector",

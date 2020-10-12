@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ee00d3f10860f2873416c191716ff4b8",
+    "content-hash": "77af3f527a988131b5a6e2a2d02136c0",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -574,7 +574,7 @@
             "version": "0.0.1",
             "dist": {
                 "type": "path",
-                "url": "../common",
+                "url": "../../packages/common",
                 "reference": "dc4dd8344a0a259e8e4e67e03d0708aca2aecbac"
             },
             "type": "library",
@@ -593,8 +593,8 @@
             "version": "0.0.1",
             "dist": {
                 "type": "path",
-                "url": "../domain",
-                "reference": "f94272ea5b067be11be8370c48bbb86efce270f4"
+                "url": "../../packages/domain",
+                "reference": "088c785be221662971e9ec3c1fd2f4916f9365a7"
             },
             "require": {
                 "quiz/common": "0.0.1"
