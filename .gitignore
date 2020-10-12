@@ -1,5 +1,5 @@
 /node_modules
-.vscoode/
+.vscode/
 lerna-debug.log
 *.code-workspace
 vendor/
