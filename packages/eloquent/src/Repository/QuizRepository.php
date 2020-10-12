@@ -4,12 +4,14 @@ declare(strict_types = 1);
 
 namespace Quiz\Eloquent\Repository;
 
-use Common\Id;
-use Domain\Exception\QuizNotFound;
-use Domain\Model\Quiz;
+use Quiz\Common\Id;
+use Quiz\Common\Slug;
+use Quiz\Domain\Exception\QuizNotFound;
+use Quiz\Domain\Model\Quiz;
+use Quiz\Domain\Repository\QuizRepository as QuizRepositoryInterface;
 use Quiz\Eloquent\Transformer\QuizTransformer;
 
-class QuizRepository implements \Domain\Repository\QuizRepository
+class QuizRepository implements QuizRepositoryInterface
 {
     private $quizTransformer;
 
@@ -30,5 +32,21 @@ class QuizRepository implements \Domain\Repository\QuizRepository
         }
 
         return $this->quizTransformer->entityToDomain($quiz);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getBySlug(Slug $slug): Quiz
+    {
+        return new Quiz();
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getAll(): array
+    {
+        return ['test' => 'test'];
     }
 }

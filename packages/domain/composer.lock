@@ -4,15 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5bcbbfafb61d947aae012ebf0f1292a1",
+    "content-hash": "18246b8896b9a40ff0a1839c4492e9a5",
     "packages": [
         {
             "name": "quiz/common",
-            "version": "dev-main",
+            "version": "0.0.1",
             "dist": {
                 "type": "path",
                 "url": "../common",
-                "reference": "628ed75be5bd9d729194cb04b98b826ec1b85eb6"
+                "reference": "dc4dd8344a0a259e8e4e67e03d0708aca2aecbac"
             },
             "type": "library",
             "autoload": {
@@ -29,9 +29,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "quiz/common": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

@@ -7,6 +7,12 @@
         "laravel"
     ],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../packages"
+        }
+    ],
     "require": {
         "php": "^7.3",
         "fideloper/proxy": "^4.2",
@@ -15,7 +21,9 @@
         "laravel/framework": "^8.0",
         "laravel/sanctum": "^2.6",
         "laravel/tinker": "^2.0",
-        "laravel/ui": "^3.0"
+        "laravel/ui": "^3.0",
+        "quiz/eloquent": "*",
+        "quiz/domain": "*"
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",
@@ -47,8 +55,7 @@
             "Tests\\": "tests/"
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
+    "minimum-stability": "stable",
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",

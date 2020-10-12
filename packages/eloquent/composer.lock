@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6f21e0f67cbc617424141f53c173ae6b",
+    "content-hash": "ee00d3f10860f2873416c191716ff4b8",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -571,11 +571,11 @@
         },
         {
             "name": "quiz/common",
-            "version": "dev-main",
+            "version": "0.0.1",
             "dist": {
                 "type": "path",
                 "url": "../common",
-                "reference": "628ed75be5bd9d729194cb04b98b826ec1b85eb6"
+                "reference": "dc4dd8344a0a259e8e4e67e03d0708aca2aecbac"
             },
             "type": "library",
             "autoload": {
@@ -590,14 +590,14 @@
         },
         {
             "name": "quiz/domain",
-            "version": "dev-main",
+            "version": "0.0.1",
             "dist": {
                 "type": "path",
                 "url": "../domain",
-                "reference": "b44ecbaa3bb654578c538c02a2cc0048aac6ff94"
+                "reference": "f94272ea5b067be11be8370c48bbb86efce270f4"
             },
             "require": {
-                "quiz/common": "*"
+                "quiz/common": "0.0.1"
             },
             "type": "library",
             "autoload": {
@@ -1397,10 +1397,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "quiz/common": 20,
-        "quiz/domain": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

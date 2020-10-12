@@ -5,7 +5,8 @@ declare(strict_types = 1);
 namespace Quiz\Eloquent\Transformer;
 
 use Quiz\Eloquent\Model\Quiz as Entity;
-use Domain\Model\Quiz as Domain;
+use Quiz\Domain\Model\Quiz as Domain;
+use Quiz\Common\Id;
 
 class QuizTransformer
 {
@@ -16,7 +17,7 @@ class QuizTransformer
     public function entityToDomain(Entity $entity): Domain
     {
         return new Domain(
-            \Common\Id::create($entity->id),
+            Id::create($entity->id),
             $entity->name,
         );
     }

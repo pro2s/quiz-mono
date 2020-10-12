@@ -21,3 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/', function () {
     return ['health' => 'OK'];
 });
+
+Route::get('/test', 'Controller@list')->name('test');

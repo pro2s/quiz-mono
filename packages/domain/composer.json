@@ -1,5 +1,6 @@
 {
     "name": "quiz/domain",
+    "version": "0.0.1",
     "description": "Domain classes package",
     "type": "library",
     "license": "MIT",
@@ -8,12 +9,12 @@
         "psr-4": {"Quiz\\Domain\\": "src/"}
     },
     "require": {
-        "quiz/common": "*@dev"
+        "quiz/common": "0.0.1"
     },
     "repositories": [
         {
             "type": "path",
-            "url": "../common"
+            "url": "../../packages/common"
         }
     ]
 }
