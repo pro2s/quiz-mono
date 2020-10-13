@@ -8,6 +8,7 @@ use Quiz\Common\Id;
 use Quiz\Common\Slug;
 use Quiz\Domain\Exception\QuizNotFound;
 use Quiz\Domain\Model\Quiz;
+use Quiz\Eloquent\Model\Quiz as Entity;
 use Quiz\Domain\Repository\QuizRepository as QuizRepositoryInterface;
 use Quiz\Eloquent\Transformer\QuizTransformer;
 
@@ -25,10 +26,10 @@ class QuizRepository implements QuizRepositoryInterface
      */
     public function getById(Id $quizId): Quiz
     {
-        $quiz = \Quiz\Eloquent\Model\Quiz::find((string) $quizId);
+        $quiz = Entity::find((string) $quizId);
 
         if (null === $quiz) {
-            throw quizNotFound::forId($quizId);
+            throw QuizNotFound::forId($quizId);
         }
 
         return $this->quizTransformer->entityToDomain($quiz);
@@ -39,7 +40,13 @@ class QuizRepository implements QuizRepositoryInterface
      */
     public function getBySlug(Slug $slug): Quiz
     {
-        return new Quiz();
+        $quiz = Entity::find('slug', (string) $slug);
+
+        if (null === $quiz) {
+            throw QuizNotFound::forSlug($slug);
+        }
+
+        return $this->quizTransformer->entityToDomain($quiz);
     }
 
     /**
@@ -47,6 +54,9 @@ class QuizRepository implements QuizRepositoryInterface
      */
     public function getAll(): array
     {
-        return ['test' => 'test'];
+        return Entity::where('active', 1)
+            ->get()
+            ->map(fn (Entity $quiz) => $this->quizTransformer->entityToDomain($quiz))
+            ->all();
     }
 }

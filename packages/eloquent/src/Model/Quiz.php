@@ -3,9 +3,22 @@
 namespace Quiz\Eloquent\Model;
 
 use Illuminate\Database\Eloquent\Model;
+use Spatie\Translatable\HasTranslations;
 
 class Quiz extends Model
 {
+    use HasTranslations;
+
+    public $incrementing = false;
+
+    public $keyType = 'string';
+
+    public $translatable = ['name', 'description'];
+
+    protected $casts = [
+        'active' => 'integer',
+    ];
+
     /**
      * The attributes that should be hidden for arrays.
      *

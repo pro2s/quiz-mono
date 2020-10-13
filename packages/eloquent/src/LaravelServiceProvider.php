@@ -3,6 +3,8 @@
 namespace Quiz\Eloquent;
 
 use Illuminate\Support\ServiceProvider;
+use Quiz\Eloquent\Generator\IdGenerator;
+use Quiz\Common\IdGenerator as IdGeneratorInterface;
 
 class LaravelServiceProvider extends ServiceProvider
 {
@@ -13,7 +15,10 @@ class LaravelServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind(
+            IdGeneratorInterface::class,
+            IdGenerator::class
+        );
     }
 
     /**

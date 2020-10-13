@@ -19,6 +19,11 @@ class QuizTransformer
         return new Domain(
             Id::create($entity->id),
             $entity->name,
+            0,
+            $entity->startedAt,
+            $entity->endedAt,
+            0,
+            $entity->active,
         );
     }
 

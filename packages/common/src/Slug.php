@@ -6,7 +6,7 @@ use Quiz\Common\Exception\InvalidSlugException;
 
 final class Slug
 {
-    public const LENGTH = 5;
+    public const LENGTH = 15;
 
     private $slug;
 
@@ -35,7 +35,7 @@ final class Slug
      */
     private static function isValidSlug(string $slug)
     {
-        if (!preg_match('/^?[A-za-z0-9]{' . self::LENGTH . '}?$/', $slug)) {
+        if (!preg_match('/^[a-z0-9]+(?:-[a-z0-9]+)*$/im', $slug) && strlen($slug) <= self::LENGTH) {
             throw InvalidSlugException::forSlug($slug);
         }
     }

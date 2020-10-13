@@ -1,17 +1,22 @@
 {
     "name": "quiz/eloquent",
     "type": "library",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Eloquent package",
     "license": "MIT",
     "minimum-stability": "stable",
     "autoload": {
-        "psr-4": {"Quiz\\Eloquent\\": "src/"}
+        "psr-4": {
+            "Quiz\\Eloquent\\": "src/",
+            "Database\\Seeders\\": "src/database/seeders/"
+        }
     },
     "require": {
         "quiz/common": "0.0.1",
         "quiz/domain": "0.0.1",
-        "illuminate/database": "^8.0"
+        "illuminate/database": "^8.0",
+        "ramsey/uuid": "^4.1",
+        "spatie/laravel-translatable": "^4.5"
     },
     "repositories": [
         {

@@ -14,8 +14,8 @@ class CreateQuizzesTable extends Migration
     public function up()
     {
         Schema::create('quizzes', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('slug');
+            $table->uuid('id')->primary();
+            $table->string('slug')->unique();
             $table->json('name');
             $table->json('description');
             $table->string('image');

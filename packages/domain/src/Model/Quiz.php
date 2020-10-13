@@ -35,8 +35,8 @@ final class Quiz
         Id $id,
         string $name,
         int $timeLimit,
-        \DateTime $startAt,
-        \DateTime $endAt,
+        ?\DateTime $startAt,
+        ?\DateTime $endAt,
         int $type,
         int $active
     ) {

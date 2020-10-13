@@ -23,3 +23,6 @@ Route::get('/', function () {
 });
 
 Route::get('/test', 'Controller@list')->name('test');
+
+Route::get('/quiz', 'QuizController@index')->name('quiz.index');
+Route::get('/quiz/{Id}', 'QuizController@show')->name('quiz.show');
