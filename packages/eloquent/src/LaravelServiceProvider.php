@@ -14,7 +14,6 @@ class LaravelServiceProvider extends ServiceProvider
     public function register()
     {
         //
-        // load migrations code
     }
 
     /**
@@ -24,6 +23,6 @@ class LaravelServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
     }
 }
