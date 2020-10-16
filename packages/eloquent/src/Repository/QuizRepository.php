@@ -56,7 +56,7 @@ class QuizRepository implements QuizRepositoryInterface
     {
         return Entity::where('active', 1)
             ->get()
-            ->map(fn (Entity $quiz) => $this->quizTransformer->entityToDomain($quiz))
+            ->map(fn (Entity $quiz): Quiz => $this->quizTransformer->entityToDomain($quiz))
             ->all();
     }
 }

@@ -12,14 +12,14 @@ class QuizNotFound extends DomainException
     public static function forId(Id $id): self
     {
         return new self(
-            sprintf("Quiz with id %s not found", $id)
+            sprintf("Quiz with id %s not found", (string) $id)
         );
     }
 
     public static function forSlug(Slug $slug): self
     {
         return new self(
-            sprintf("Quiz with slug %s not found", $slug)
+            sprintf("Quiz with slug %s not found", (string) $slug)
         );
     }
 }

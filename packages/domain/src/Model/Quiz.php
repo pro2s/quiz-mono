@@ -5,6 +5,7 @@ declare(strict_types = 1);
 namespace Quiz\Domain\Model;
 
 use Quiz\Common\Id;
+use Quiz\Common\Slug;
 
 final class Quiz
 {
@@ -38,7 +39,10 @@ final class Quiz
         ?\DateTime $startAt,
         ?\DateTime $endAt,
         int $type,
-        int $active
+        int $active,
+        ?Slug $slug = null,
+        ?string $description = null,
+        ?string $image = null
     ) {
         $this->id = $id;
         $this->name = $name;
@@ -47,11 +51,19 @@ final class Quiz
         $this->endAt = $endAt;
         $this->type = $type;
         $this->active = $active;
+        $this->description = $description;
+        $this->slug = $slug;
+        $this->image = $image;
     }
 
     public function getId(): Id
     {
         return $this->id;
+    }
+
+    public function getSlug(): ?Slug
+    {
+        return $this->slug;
     }
 
     public function getName(): string
@@ -64,17 +76,17 @@ final class Quiz
         return $this->timeLimit;
     }
 
-    public function getStartAt(): \DateTime
+    public function getStartAt(): ?\DateTime
     {
         return $this->startAt;
     }
 
-    public function getEndAt(): \DateTime
+    public function getEndAt(): ?\DateTime
     {
         return $this->endAt;
     }
 
-    public function getType(): RunType
+    public function getType(): int
     {
         return $this->type;
     }
@@ -82,5 +94,15 @@ final class Quiz
     public function getActive(): int
     {
         return $this->active;
+    }
+
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+
+    public function getImage(): ?string
+    {
+        return $this->image;
     }
 }

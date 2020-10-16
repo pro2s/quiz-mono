@@ -1,0 +1,17 @@
+{
+    "name": "quiz/inspect",
+    "version": "0.0.1",
+    "description": "Inspect php package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {"": "src/"}
+    },
+    "require": {
+    },
+    "require-dev": {
+        "vimeo/psalm": "^3.17",
+        "psalm/plugin-laravel": "^1.4"
+    }
+}
